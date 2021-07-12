@@ -1,12 +1,12 @@
-# run in root of mease-lab-to-nwb repo
+# remove & clone mease-lab-to-nwb
+rm -rf mease-lab-to-nwb
+git clone https://github.com/lkeegan/mease-lab-to-nwb
+cd mease-lab-to-nwb
+git checkout add_ci
 
-# remove env
-conda remove --name measelab --all
-
-# create env
+# remove & recreate conda env
+conda remove --name measelab --all -y
 conda env create -f mease-env.yml
-
-# activate env
 conda activate measelab
 
 # install
