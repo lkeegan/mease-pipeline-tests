@@ -186,7 +186,7 @@ freq_max_hp = 3000
 # In[ ]:
 
 
-get_ipython().run_line_magic('pinfo', 'st.preprocessing.common_reference')
+#get_ipython().run_line_magic('pinfo', 'st.preprocessing.common_reference')
 
 
 # In[ ]:
@@ -351,7 +351,7 @@ ss.available_sorters()
 # In[ ]:
 
 
-get_ipython().run_line_magic('pinfo', 'ss.run_sorters')
+#get_ipython().run_line_magic('pinfo', 'ss.run_sorters')
 
 
 # In[ ]:
@@ -432,7 +432,7 @@ print(f"Available EC features: {ec_list}")
 # In[ ]:
 
 
-get_ipython().run_line_magic('pinfo', 'st.postprocessing')
+#get_ipython().run_line_magic('pinfo', 'st.postprocessing')
 
 
 # ### Postprocess all sorting outputs
@@ -526,7 +526,7 @@ print(good_units)
 # In[ ]:
 
 
-get_ipython().run_line_magic('pinfo', 'st.curation.threshold_num_spikes')
+#get_ipython().run_line_magic('pinfo', 'st.curation.threshold_num_spikes')
 
 
 # In[ ]:
