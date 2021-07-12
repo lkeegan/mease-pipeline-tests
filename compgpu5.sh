@@ -7,7 +7,7 @@ git checkout add_ci
 # remove & recreate conda env
 conda remove --name measelab --all -y
 conda env create -f mease-env.yml
-conda activate measelab
 
-# install
-python setup.py develop
+# do this manually in shell:
+# conda activate measelab
+# python setup.py develop

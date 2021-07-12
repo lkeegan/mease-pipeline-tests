@@ -14,7 +14,7 @@ import spikewidgets as sw
 
 from mease_lab_to_nwb.convert_ced.cednwbconverter import quick_write
 
-bin_file = Path(r'm365_pt1_590-1190secs.bin')
+bin_file = Path(r'../../data/m365_pt1_590-1190secs.bin')
 sampling_frequency = 3.003003003003003e+04;
 data_type = "int16"
 numChan = 64;
@@ -28,7 +28,7 @@ spikeinterface_folder.mkdir(parents=True, exist_ok=True)
 # In[ ]:
 
 
-recording_prb = '../probe_files/cambridge_neurotech_H3.prb'
+recording_prb = '../../mease-lab-to-nwb/probe_files/cambridge_neurotech_H3.prb'
 
 
 # In[ ]:
@@ -254,9 +254,9 @@ w_ts_ap = sw.plot_timeseries(recording_processed, trange=[4, 8])
 # In[ ]:
 
 
-#ss.Kilosort3Sorter.set_kilosort3_path("C:/Users/NeuroNetz/Documents/GitHub/Kilosort3")
-ss.Kilosort2_5Sorter.set_kilosort2_5_path("C:/Users/NeuroNetz/Documents/GitHub/Kilosort2.5")
-#ss.Kilosort2Sorter.set_kilosort2_path("C:/Users/NeuroNetz/Documents/GitHub/Kilosort2")
+#ss.Kilosort3Sorter.set_kilosort3_path("/export/home/lkeegan/CTC/Kilosort")
+ss.Kilosort2_5Sorter.set_kilosort2_5_path("/export/home/lkeegan/CTC/Kilosort-2.5")
+#ss.Kilosort2Sorter.set_kilosort2_path("/export/home/lkeegan/CTC/Kilosort-2.0")
 #ss.installed_sorters()
 # ss.IronClustSorter.set_ironclust_path("D:/GitHub/ironclust")
 
